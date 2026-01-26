@@ -15,11 +15,12 @@ const footerHTML = `<div class="f-tittle">
               <li><a href="/with-urdu-translation/">With Urdu Translation</li></a>
               <li><a href="/about">About</li></a>
               <li><a href="/privacy-policy">Privacy Policy</li></a>
+              <li><a href="/blog">Blog</li></a>
             </ul>
           </div>
         </div>
         <div class="copyright">
-          <p>Surah Baqarah Last 2 Ayat &copy; 2025</p>
+          <p>Surah Baqarah Last 2 Ayat &copy; 2026</p>
         </div>
       </div>
     </div>`;
