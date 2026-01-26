@@ -66,4 +66,10 @@
       <changefreq>weekly</changefreq>
    </url>
 
+   <url>
+      <loc>https://surahbaqarahlast2ayat.com/blog</loc>
+      <priority>0.80</priority>
+      <changefreq>yearly</changefreq>
+   </url>
+
 </urlset>
