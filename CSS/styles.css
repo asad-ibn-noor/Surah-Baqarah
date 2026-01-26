@@ -3,35 +3,36 @@
   padding: 0;
 }
 :root {
-  --navy: #1A2D42;
-  --light-navy: #2E4156;
-  --ash-grey: #AAB7B7;
-  --light-gray: #C0C8CA;
-  --cloud-gray: #D4D8DD;
-  --white: #F0F3F4;
+  --navy: #1a2d42;
+  --light-navy: #2e4156;
+  --ash-grey: #aab7b7;
+  --light-gray: #c0c8ca;
+  --cloud-gray: #d4d8dd;
+  --white: #f0f3f4;
 }
 html {
   scroll-behavior: smooth;
 }
 
 @font-face {
-  font-family: 'MyQuranFont';
+  font-family: "MyQuranFont";
   /* your custom name */
-  src: url('../fonts/myQuranFont.ttf') format('truetype');
+  src: url("../fonts/myQuranFont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
-.side-gap{
+.side-gap {
   margin-left: 10px;
 }
 
-.side-gap-right{
+.side-gap-right {
   margin-right: 15px;
 }
 
-.quran ,.urdu {
-  font-family: 'MyQuranFont', serif;
+.quran,
+.urdu {
+  font-family: "MyQuranFont", serif;
   font-weight: bold;
   line-height: 2;
   direction: rtl;
@@ -39,8 +40,12 @@ html {
   margin-top: 15px;
 }
 
-.en-quran{
-  font-family: 'MyQuranFont', serif;
+#ayat-285, #ayat-286 {
+  font-size: 26px;
+}
+
+.en-quran {
+  font-family: "MyQuranFont", serif;
   color: var(--navy);
   font-size: 20px;
   font-weight: bold;
@@ -54,21 +59,18 @@ html {
   font-size: 22px;
 }
 
-
 p {
   margin-bottom: 12px;
 }
-
 
 ul {
   font-weight: 300;
 }
 
-
 body {
   background: var(--cloud-gray);
   color: var(--dark);
-  font-family: 'Arial, sans-serif';
+  font-family: "Arial, sans-serif";
   line-height: 1.6;
 }
 
@@ -76,6 +78,7 @@ header {
   background: var(--navy);
   color: var(--white);
   border-radius: 50px;
+  margin: 7px 7px 0;
 }
 
 .navbar {
@@ -84,8 +87,6 @@ header {
   align-items: center;
   padding: 10px 30px;
 }
-
-
 
 .nav-logo {
   height: 50px;
@@ -132,7 +133,6 @@ nav a:hover {
   color: var(--white);
   transform: scale(1.1);
 }
-
 
 .nav-toggle {
   display: none;
@@ -203,6 +203,37 @@ main {
   padding: 5px;
   text-align: left;
   padding: 10px;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  gap: 12px;
+  background: var(--navy);
+  color: var(--white);
+  border-radius: 20px;
+  text-align: center;
+  align-self: self-start;
+  padding: 5px;
+}
+
+.blog-images {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 1px 1px 15px var(--text-color, #1b1b1b);
+}
+
+.blog-post p {
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .blog-content,
@@ -292,11 +323,11 @@ td {
   text-align: left;
 }
 
-.black li{
+.black li {
   color: black;
 }
 
-.bullet li{
+.bullet li {
   list-style: none;
   margin-bottom: 10px;
 }
@@ -306,13 +337,13 @@ td {
   margin-right: 8px;
 }
 
-.bold{
+.bold {
   font-weight: bold;
   color: var(--light-navy);
 }
 
-.footer{
-  margin: 0 7px
+.footer {
+  margin: 0 7px 7px;
 }
 
 .f-grid {
@@ -349,7 +380,6 @@ td {
 
 .copyright {
   text-align: center;
-  ;
 }
 
 .in-link {
@@ -358,27 +388,55 @@ td {
   font-weight: bold;
 }
 
-.download-btn{
+.download-btn {
   text-align: center;
 }
 
 .btn {
-    background-color: var(--navy);
-    text-decoration: none;
-    text-align: center;
-    display: inline-block;
-    color: #fff;
-    padding: 15px 20px;
-    border-radius: 10px;
-    box-shadow: 0 1px 10px var(--text-color, #1b1b1b);
-    transition: ease-in-out 0.1s;
-    font-weight: bold;
+  background-color: var(--navy);
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 10px var(--text-color, #1b1b1b);
+  transition: ease-in-out 0.1s;
+  font-weight: bold;
 }
 
 .btn:hover {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
+.ad-banner {
+            margin: 15px;
+            padding: 10px;
+            display: flex;
+            background-color: var(--cloud-gray);
+            border-radius: 5px;
+            align-items: center;
+        }
+
+        .ad-content { flex: 1; padding-right: 10px; }
+        .ad-content h2 { margin: 0; color: #0d47a1; font-size: 18px; }
+        .ad-content p { font-size: 10px; margin: 5px 0; color: #555; }
+.ad-image {
+            width: 100px;
+            height: 80px;
+            background-color: #ddd; /* Placeholder for image */
+            background-image: url('https://via.placeholder.com/100x80'); 
+            background-size: cover;
+        }
+
+@media (max-width: 1024px){
+  .blog-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: space-between;
+}
+}
 
 @media (max-width: 768px) {
 
@@ -387,12 +445,48 @@ td {
     font-size: 28px;
   }
 
+  h1{
+    font-size: 27px;
+  }
+
   main {
     padding: 7px;
     display: flex;
     flex-direction: column;
     gap: 7px;
-    
+  }
+
+  .toc{
+    display: none;
+  }
+
+.blog-grid {
+  display: flexbox;
+  flex-direction: column;
+  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.f-grid {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 10px;
+  }
+
+/* .f-links{
+  padding: 0 10px;
+} */
+.f-links ul{
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: 1.5fr 1fr;
+
+  align-items: center;
+  text-align: center;
+  border-radius: 0%;
   }
 
   nav ul {
@@ -401,7 +495,7 @@ td {
     gap: 20px;
   }
 
-  .toc{
+  .toc {
     align-self: stretch;
   }
   .toc-links li {
@@ -459,7 +553,6 @@ td {
     padding: 60px 20px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
-
   }
 
   nav a {
@@ -490,8 +583,8 @@ td {
     max-width: 300px;
   }
 
-
   .nav-logo {
     display: block;
   }
 }
+
