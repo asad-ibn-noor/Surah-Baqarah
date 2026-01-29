@@ -252,9 +252,8 @@ main {
   background: var(--white);
   color: black;
   border-radius: 20px;
-  padding: 5px;
   text-align: left;
-  padding: 10px;
+  padding: 20px 10px;
 }
 
 .blog-grid {
@@ -309,7 +308,7 @@ main {
   padding: 8px 26px;
 }
 
-h4 {
+h3 {
   display: table;
   background: var(--navy);
   color: var(--white);
@@ -317,11 +316,11 @@ h4 {
   padding: 8px 26px;
 }
 
-h4 {
+h3 {
   margin: 19px 0;
 }
 
-h5 {
+h4 {
   margin-bottom: 19px;
   font-size: 15px;
 }
