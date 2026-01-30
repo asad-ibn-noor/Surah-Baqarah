@@ -16,8 +16,13 @@ html {
 
 @font-face {
   font-family: "MyQuranFont";
-  /* your custom name */
   src: url("../fonts/myQuranFont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: "MyUrduFont";
+  src: url("../fonts/myUrduFont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -78,21 +83,63 @@ html {
   margin-right: 15px;
 }
 
-.quran,
-.urdu {
+/* Container for spacing */
+.audio-container {
+    background-color: #f8f9fa; /* Light grey background */
+    padding: 15px;
+    border-radius: 12px;
+    margin: 20px 0;
+    text-align: center;
+    border: 1px solid #e9ecef;
+}
+
+/* Label above the player */
+.audio-label {
+    font-size: 0.9rem;
+    color: #1a2d42; /* Navy color */
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Make audio player fill the width on mobile */
+.custom-audio {
+    width: 100%;
+    height: 40px;
+}
+.arabic-urdu{
+  background-color: #deffe9;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: #637068 5px 6px 5px;
+}
+.quran {
   font-family: "MyQuranFont", serif;
+  color: var(--navy);
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 2;
+  direction: rtl;
+  text-align: center;
+  margin-top: 15px;
+  line-height: 50px;
+}
+
+.urdu {
+  font-family: "MyUrduFont", serif;
+  font-size: 22px;
+  font-weight: bold;
   line-height: 2;
   direction: rtl;
   text-align: right;
   margin-top: 15px;
 }
 
-.urdu {
-  font-size: 22px;
-}
-
-#ayat-285, #ayat-286 {
+.heading-center{
+  text-align: center;
   font-size: 26px;
+  margin: 10px 5px;
 }
 
 .en-quran {
@@ -104,13 +151,16 @@ html {
   line-height: 2;
   margin-top: 15px;
 }
-
-.quran {
-  color: var(--navy);
-  font-size: 22px;
-  font-weight: bold;
+.tafseer-card h4 {
+  margin-top: 1.5rem; 
+  margin-bottom: 0.5rem; 
+  color: var(--navy); 
 }
 
+.tafseer-card p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
 p {
   margin-bottom: 12px;
 }
@@ -322,7 +372,6 @@ h3 {
 
 h4 {
   margin-bottom: 19px;
-  font-size: 15px;
 }
 
 /* Container to prevent table from breaking on mobile */
@@ -486,26 +535,6 @@ h4 {
 .btn:hover {
   transform: scale(0.95);
 }
-
-.ad-banner {
-            margin: 15px;
-            padding: 10px;
-            display: flex;
-            background-color: var(--cloud-gray);
-            border-radius: 5px;
-            align-items: center;
-        }
-
-        .ad-content { flex: 1; padding-right: 10px; }
-        .ad-content h2 { margin: 0; color: #0d47a1; font-size: 18px; }
-        .ad-content p { font-size: 10px; margin: 5px 0; color: #555; }
-.ad-image {
-            width: 100px;
-            height: 80px;
-            background-color: #ddd; /* Placeholder for image */
-            background-image: url('https://via.placeholder.com/100x80'); 
-            background-size: cover;
-        }
 
 @media (max-width: 1024px){
   .blog-grid {
