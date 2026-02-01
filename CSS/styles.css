@@ -21,7 +21,7 @@ html {
   font-weight: normal;
   font-style: normal;
 }
-@font-face{
+@font-face {
   font-family: "MyUrduFont";
   src: url("../fonts/myUrduFont.ttf") format("truetype");
   font-weight: normal;
@@ -31,7 +31,7 @@ html {
 .faq-container {
   max-width: 800px;
   margin: 20px auto;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 /* The Main Accordion Box */
@@ -55,40 +55,40 @@ html {
   background-color: #ffffff;
 }
 
-
-
 .images {
   width: 100%;
   border-radius: 12px 12px 0 0;
   display: block;
 }
 
-.ad-container{
+.ad-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.ad-container a{
-  width: 400px;;
+.ad-container a {
+  width: 300px;
 }
 .ad-cta {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
-  background-color: #25D366; /* WhatsApp Green */
+  background-color: #25d366; /* WhatsApp Green */
   color: white;
   text-decoration: none;
   padding: 14px 24px;
   font-size: 16px;
   font-weight: 600;
   border-radius: 12px 12px; /* Matches ad corners */
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
 }
 
 .ad-cta:hover {
-  background-color: #128C7E; /* Darker WhatsApp shade */
+  background-color: #128c7e; /* Darker WhatsApp shade */
   transform: translateY(-2px);
 }
 
@@ -103,7 +103,7 @@ html {
 }
 /* Custom Arrow using CSS */
 .faq-question::after {
-  content: '▼';
+  content: "▼";
   float: right;
   font-size: 12px;
   color: var(--ash-grey);
@@ -132,30 +132,30 @@ html {
 
 /* Container for spacing */
 .audio-container {
-    background-color: #f8f9fa; /* Light grey background */
-    padding: 15px;
-    border-radius: 12px;
-    margin: 10px 0;
-    text-align: center;
-    border: 1px solid #e9ecef;
+  background-color: #f8f9fa; /* Light grey background */
+  padding: 15px;
+  border-radius: 12px;
+  margin: 10px 0;
+  text-align: center;
+  border: 1px solid #e9ecef;
 }
 
 /* Label above the player */
 .audio-label {
-    font-size: 0.9rem;
-    color: #1a2d42; /* Navy color */
-    font-weight: bold;
-    margin-bottom: 8px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+  font-size: 0.9rem;
+  color: #1a2d42; /* Navy color */
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 /* Make audio player fill the width on mobile */
 .custom-audio {
-    width: 100%;
-    height: 40px;
+  width: 100%;
+  height: 40px;
 }
-.arabic-urdu{
+.arabic-urdu {
   background-color: var(--arabic-back);
   border-radius: 10px;
   padding: 10px;
@@ -183,7 +183,7 @@ html {
   margin-top: 15px;
 }
 
-.heading-center{
+.heading-center {
   text-align: center;
   font-size: 26px;
   margin: 10px 5px;
@@ -199,9 +199,9 @@ html {
   margin-top: 15px;
 }
 .tafseer-card h4 {
-  margin-top: 1.5rem; 
-  margin-bottom: 0.5rem; 
-  color: var(--navy); 
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--navy);
 }
 
 .tafseer-card p {
@@ -423,55 +423,55 @@ h4 {
 
 /* Container to prevent table from breaking on mobile */
 .quran-table-wrapper {
-    margin: 20px 0;
-    overflow-x: auto;
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
+  margin: 20px 0;
+  overflow-x: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
 }
 
 .quran-info-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: var(--white);
-    font-family: sans-serif;
-    font-size: 16px;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--white);
+  font-family: sans-serif;
+  font-size: 16px;
 }
 
 /* Header styling */
 .quran-info-table thead {
-    background-color: var(--light-navy);
-    color: #ffffff;
-    text-align: left;
+  background-color: var(--light-navy);
+  color: #ffffff;
+  text-align: left;
 }
 
 .quran-info-table th {
-    padding: 15px;
-    font-weight: 600;
+  padding: 15px;
+  font-weight: 600;
 }
 
 /* Cell padding and borders */
 .quran-info-table td {
-    padding: 12px 15px;
-    border-bottom: 1px solid #e2e8f0;
-    vertical-align: middle;
+  padding: 12px 15px;
+  border-bottom: 1px solid #e2e8f0;
+  vertical-align: middle;
 }
 
 /* Label column (Left side) */
 .feature-name {
-    background-color: var(--cloud-gray);
-    font-weight: bold;
-    color: #334155;
-    width: 35%;
+  background-color: var(--cloud-gray);
+  font-weight: bold;
+  color: #334155;
+  width: 35%;
 }
 
 /* Detail column (Right side) */
 .feature-detail {
-    color: #475569;
+  color: #475569;
 }
 
 /* Remove border from the last row */
 .quran-info-table tr:last-child td {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .blog-list {
@@ -583,23 +583,22 @@ h4 {
   transform: scale(0.95);
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
   .blog-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  justify-content: space-between;
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: space-between;
+  }
 }
 
 @media (max-width: 768px) {
-
   .toc-tittle,
   .f-tittle p {
     font-size: 28px;
   }
 
-  h1{
+  h1 {
     font-size: 27px;
   }
 
@@ -610,37 +609,37 @@ h4 {
     gap: 7px;
   }
 
-  .toc{
+  .toc {
     display: none;
   }
 
-.blog-grid {
-  display: flexbox;
-  flex-direction: column;
-  grid-template-columns: 1fr 1fr;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
-}
-
-.f-grid {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-  gap: 10px;
+  .blog-grid {
+    display: flexbox;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
   }
 
-/* .f-links{
+  .f-grid {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+
+  /* .f-links{
   padding: 0 10px;
 } */
-.f-links ul{
-  display: grid;
-  flex-direction: column;
-  grid-template-columns: 1.5fr 1fr;
+  .f-links ul {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 1.5fr 1fr;
 
-  align-items: center;
-  text-align: center;
-  border-radius: 0%;
+    align-items: center;
+    text-align: center;
+    border-radius: 0%;
   }
 
   nav ul {
@@ -741,4 +740,3 @@ h4 {
     display: block;
   }
 }
-
