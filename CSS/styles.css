@@ -5,6 +5,7 @@
   --light-gray: #c0c8ca;
   --cloud-gray: #d4d8dd;
   --white: #f0f3f4;
+  --arabic-back: #e1eee6;
 }
 * {
   margin: 0;
@@ -54,6 +55,52 @@ html {
   background-color: #ffffff;
 }
 
+
+
+.images {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+  display: block;
+}
+
+.ad-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ad-container a{
+  width: 400px;;
+}
+.ad-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #25D366; /* WhatsApp Green */
+  color: white;
+  text-decoration: none;
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 12px 12px; /* Matches ad corners */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.ad-cta:hover {
+  background-color: #128C7E; /* Darker WhatsApp shade */
+  transform: translateY(-2px);
+}
+
+.ad-cta:active {
+  transform: translateY(0);
+}
+
+.cta-icon {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1); /* Makes the icon white if the SVG is black */
+}
 /* Custom Arrow using CSS */
 .faq-question::after {
   content: '▼';
@@ -88,7 +135,7 @@ html {
     background-color: #f8f9fa; /* Light grey background */
     padding: 15px;
     border-radius: 12px;
-    margin: 20px 0;
+    margin: 10px 0;
     text-align: center;
     border: 1px solid #e9ecef;
 }
@@ -109,7 +156,7 @@ html {
     height: 40px;
 }
 .arabic-urdu{
-  background-color: #deffe9;
+  background-color: var(--arabic-back);
   border-radius: 10px;
   padding: 10px;
   box-shadow: #637068 5px 6px 5px;

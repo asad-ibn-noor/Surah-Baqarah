@@ -25,6 +25,15 @@ const footerHTML = `<div class="f-tittle">
       </div>
     </div>`;
 
+const adHTML = `<img class="images" src="../images/online-tutoring-ad.webp" alt="Online Tutoring Ad" loading="lazy">
+          <a href="https://wa.me/923229879077?text=Assalam-o-Alaikum,%20I%20am%20interested%20in%20a%20FREE%20Demo%20class."
+            class="ad-cta" target="_blank" rel="noopener noreferrer">
+            <span>Chat with us on WhatsApp</span>
+            <img class="cta-icon" src="../images/whatsapp.svg" alt="WhatsApp Icon">
+          </a>`;
+
+document.querySelector(".ad-container").innerHTML = adHTML;
+
 document.querySelector(".footer").innerHTML = footerHTML;
 
 const navToggle = document.querySelector(".nav-toggle");
