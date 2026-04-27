@@ -17,13 +17,13 @@ html {
 
 @font-face {
   font-family: "MyQuranFont";
-  src: url("../fonts/myQuranFont.woff2") format("truetype");
+  src: url("/fonts/myQuranFont.woff2") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "MyUrduFont";
-  src: url("../fonts/myUrduFont.ttf") format("truetype");
+  src: url("/fonts/myUrduFont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
